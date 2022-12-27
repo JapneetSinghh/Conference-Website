@@ -78,6 +78,7 @@ ul, li {
     margin-right: 14px;
 }
 
+
 @media screen and (max-width:800px) {
     #showcase1 article h2 {
         font-size: 29px;
@@ -87,6 +88,7 @@ ul, li {
         font-size: 20px;
     }
 }
+
 
 @media screen and (max-width:550px) {
     #showcase1 article h2 {
