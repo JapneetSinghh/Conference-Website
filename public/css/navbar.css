@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    /* padding: 10px; */
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    background-color: white;
 }
 
 #navbar ul {

@@ -14,7 +14,7 @@
 }
 
 .registerBtn:hover {
-    background-color: teal;
+    background-color: var(--primary-color-dark);
     color: white;
     font-size: 15px;
     padding: 14px 20px;

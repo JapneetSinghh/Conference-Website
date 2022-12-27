@@ -13,9 +13,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
-app.use('/', (req, res, next) => {
-    res.render('index');
-})
+const homeRoutes = require('./routes/homeRoutes');
+app.use(homeRoutes.router);
 
 const port = process.env.PORT || 2100;
 app.listen(port, () => {

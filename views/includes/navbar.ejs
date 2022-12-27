@@ -1,0 +1,27 @@
+<!-- Mobile Navbar / Sidebar -->
+<nav id="mobileNav">
+    <div id="navbar-logo">
+        <h1>ICCDI 2023</h1>
+    </div>
+    <button id="sidebarBtn"><i class="fa-solid fa-bars-staggered"></i></button>
+</nav>
+
+
+<nav id="navbar">
+    <div id="closeSideBar">
+        <button id="closeSidebarBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="navbar-logo">
+        <h1>ICCDI 2023</h1>
+    </div>
+    <ul>
+        <li class="<%= path==='/'?'current':'' %>"><a href="/">Home</a></li>
+        <li class="<%= path==='/about'?'current':'' %>"><a href="/about">About</a></li>
+        <li class="<%= path==='/speakers'?'current':'' %>"><a href="/speakers">Speakers</a></li>
+        <li><a href="/">Venue</a></li>
+        <li><a href="/">Papers</a></li>
+    </ul>
+    <div id="registerBtn">
+        <a class="registerBtn" href="/">Register</a>
+    </div>
+</nav>

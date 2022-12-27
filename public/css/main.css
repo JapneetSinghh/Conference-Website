@@ -4,6 +4,7 @@
     /* --primary-color: #FD5D5D; */
     /* --primary-color: rgb(2, 151, 151); */
     --primary-color: rgb(233, 167, 0);
+    --primary-color-dark: rgb(179, 129, 3);
     --primary-color2: #333;
     --primary-color3: rgb(228, 235, 235);
     --gray: #9e9e9e;
@@ -280,4 +281,35 @@ h1, h2, h3, h4 {
         width: 90%;
     }
 
+}
+
+#showcase-template {
+    display: grid;
+    place-items: center;
+    min-height: 250px;
+    background: rgb(250, 251, 247);
+}
+
+#showcase-template h2 {
+    font-size: 49px;
+    margin-bottom: 2px;
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:900px) {
+    #showcase-template h2 {
+        font-size: 30px;
+    }
+}
+
+.speaker-img {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+}
+
+.speaker-img img {
+    border-radius: 50%;
+    width: 100%;
 }
