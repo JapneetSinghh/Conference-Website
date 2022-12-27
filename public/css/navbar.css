@@ -1,0 +1,147 @@
+#navbar, #mobileNav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    /* padding: 10px; */
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+#navbar ul li a {
+    color: var(--gray);
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    padding-bottom: 6px;
+    transition: var(--transition);
+}
+
+.current a {
+    color: var(--primary-color) !important;
+}
+
+#navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+#navbar-logo {
+    font-size: 27px;
+    /* font-size: 20px; */
+    font-family: 'Chivo Mono', monospace;
+    letter-spacing: 2px;
+}
+
+#closeSideBar, #mobileNav {
+    display: none;
+}
+
+
+
+@media screen and (max-width:800px) {
+    #sidebarBtn {
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    #sidebarBtn:hover {
+        color: brown;
+    }
+
+    #mobileNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #mobileNav {
+        justify-content: space-between;
+    }
+
+
+
+    #mobileNav #navbar-logo {
+        font-size: 23px;
+    }
+
+
+    #navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul li {
+        border-bottom: 2px solid rgb(247, 247, 247);
+        transition: var(--transition);
+    }
+
+    #navbar ul li a {
+        font-size: 24px;
+        width: 100%;
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .current {
+        border-bottom: 2px solid var(--primary-color) !important;
+    }
+
+    #navbar-logo {
+        font-size: 30px;
+    }
+
+    #navbar {
+        position: fixed;
+        width: 100vw;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow: scroll;
+        top: 0;
+        z-index: 2;
+        background-color: white;
+        transition: var(--transition);
+        transform: translateX(-100vw);
+    }
+
+    #closeSideBar {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+
+    #closeSideBar button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 34px;
+        color: red;
+        transition: var(--transition);
+    }
+
+    #closeSideBar button:hover {
+        color: brown;
+        transform: rotate(-180deg);
+    }
+
+    .show-sidebar {
+        transform: translateX(0vw) !important;
+    }
+}

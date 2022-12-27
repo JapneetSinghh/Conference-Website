@@ -1,1 +1,75 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/util.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Mobile Navbar / Sidebar -->
+    <nav id="mobileNav">
+        <div id="navbar-logo">
+            <h1>ICCDI 2023</h1>
+        </div>
+        <button id="sidebarBtn"><i class="fa-solid fa-bars-staggered"></i></button>
+    </nav>
+
+    <nav id="navbar">
+        <div id="closeSideBar">
+            <button id="closeSidebarBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="navbar-logo">
+            <h1>ICCDI 2023</h1>
+        </div>
+        <ul>
+            <li class="current"><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Speakers</a></li>
+            <li><a href="/">Venue</a></li>
+            <li><a href="/">Papers</a></li>
+        </ul>
+        <div id="registerBtn">
+            <a class="registerBtn" href="/">Register</a>
+        </div>
+    </nav>
+    <section id="showcase1">
+        <article>
+            <div class="bgText">
+                <br>
+                <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+                    <div class="line">
+                    </div>
+                    <div>
+                        <p class="size18"></p>International Conference On</p>
+                        <h2>Computational Intelligence, Data Analytics </h2>
+                        <h2>and Information Sciences</h2>
+                    </div>
+                </div>
+                <p style="font-size: 16px; margin-bottom: 6px; line-height: 4px;">Organised By</p>
+                <div class="organisedBy">
+                    <p>Guru Tegh Bahadur Institute of Technology, Affiliated to GGSIPU, New
+                        Delhi, India</p>
+                </div>
+                <div class="organisedBy">
+                    <p></i><i class="fa-solid fa-calendar-days"></i> 7th January
+                        &nbsp;&nbsp;/&nbsp;&nbsp; <i class="fa-solid fa-clock"></i> 10 Am Onwards</p>
+                </div>
+                <div style="margin: 8px 0;">
+                    <a class="registerBtn" href="/">Register Online</a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="/js/sidebar.js"></script>
+</body>
+
+</html>

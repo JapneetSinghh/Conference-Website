@@ -1,0 +1,20 @@
+.registerBtn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 15px;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: var(--transition);
+    font-family: 'Chivo Mono', monospace;
+
+}
+
+.registerBtn:hover {
+    background-color: #850E35;
+    color: white;
+    font-size: 15px;
+    padding: 14px 20px;
+}
