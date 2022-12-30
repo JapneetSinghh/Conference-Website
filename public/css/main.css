@@ -40,8 +40,8 @@ h1, h2, h3, h4 {
     display: grid;
     place-items: center;
     min-height: 600px;
-    /* background: linear-gradient(rgba(32, 32, 32, 0.545), rgba(255, 255, 255, 0.778), rgba(255, 255, 255, 0.836)), url('/img/showcase-1-article1.jpg') center center/cover no-repeat; */
-    background: rgb(250, 251, 247);
+    background: linear-gradient(rgba(255, 255, 255, 0.586), rgba(255, 255, 255, 0.939), rgba(255, 255, 255, 0.943), rgba(255, 255, 255, 0.921)), url('/img/showcase-1-article1.jpg') center center/cover no-repeat;
+    /* background: rgb(250, 251, 247); */
 }
 
 #showcase1 article p {
@@ -287,7 +287,9 @@ h1, h2, h3, h4 {
     display: grid;
     place-items: center;
     min-height: 250px;
-    background: rgb(250, 251, 247);
+    /* background: rgb(250, 251, 247); */
+    background: linear-gradient(rgba(255, 255, 255, 0.769), rgba(255, 255, 255, 0.921)), url('/img/showcase-1-article1.jpg') center center/cover no-repeat;
+
 }
 
 #showcase-template h2 {
@@ -303,13 +305,127 @@ h1, h2, h3, h4 {
     }
 }
 
+#speakers article {
+    display: flex;
+    align-items: center;
+}
+
 .speaker-img {
     width: 130px;
     height: 130px;
     margin: 10px;
+    position: relative;
 }
 
 .speaker-img img {
     border-radius: 50%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speaker-img i {
+    color: blue;
+    font-size: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+
+.speaker-content {
+    width: 80%;
+    padding: 10px;
+}
+
+.speaker-content h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.speaker-content i {
+    color: blue;
+    font-size: 25px;
+
+}
+
+.speaker-content p {
+    font-size: 17px !important;
+}
+
+.gtbitContacts .col1, .gtbitContacts .col2 {
+    width: 50%;
+    min-height: 500px;
+}
+
+.col2 {
+    background: url(/img/gtbit.jpg) center center/cover no-repeat;
+}
+
+.gtbitContacts .col1>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gtbitContacts .col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gtbitContacts .col1 i {
+    font-size: 30px;
+    height: 80px;
+    width: 80px;
+    display: grid;
+    place-items: center;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.gtbitContacts .col1 p {
+    color: #333 !important;
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 17px !important;
+}
+
+
+.session {
+    background-color: #ffffff;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.session>div {
+    width: 50%;
+    padding: 20px;
+}
+
+.session div img {
+    width: 100%;
+}
+
+.session h1 {
+    font-size: 30px;
+}
+
+.primaryColor {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:800px) {
+    .gtbitContacts .col1, .gtbitContacts .col2 {
+        width: 100%;
+    }
+
+    .session>div {
+        width: 100%;
+        padding: 20px;
+    }
 }

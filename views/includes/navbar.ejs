@@ -17,9 +17,24 @@
     <ul>
         <li class="<%= path==='/'?'current':'' %>"><a href="/">Home</a></li>
         <li class="<%= path==='/about'?'current':'' %>"><a href="/about">About</a></li>
+        <li class="<%= path==='/papers'?'current':'' %>">
+            <div class="dropdown">
+
+                <span>Papers&nbsp;<i class="fa-solid fa-caret-down"></i></span>
+                <div class="dropdown-content">
+                    <div class="links">
+                        <a href="/callForPaper">Call For Paper</a>
+                        <a href="/paperSubmission">Paper Submission</a>
+                        <!-- <a href="">Call For Paper</a> -->
+                    </div>
+                </div>
+            </div>
+        </li>
         <li class="<%= path==='/speakers'?'current':'' %>"><a href="/speakers">Speakers</a></li>
-        <li><a href="/">Venue</a></li>
-        <li><a href="/">Papers</a></li>
+        <li class="<%= path==='/venue'?'current':'' %>"><a href="/venue">Venue</a></li>
+        <li class="<%= path==='/sponsorship'?'current':'' %>"><a href="/sponsorship">Sponsorship</a></li>
+        <li class="<%= path==='/sessions'?'current':'' %>"><a href="/sessions">Sessions</a></li>
+        <li class="<%= path==='/publications'?'current':'' %>"><a href="/publications">Publications</a></li>
     </ul>
     <div id="registerBtn">
         <a class="registerBtn" href="/">Register</a>
