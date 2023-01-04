@@ -99,7 +99,7 @@
 
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
     display: block;
 }
 
@@ -145,10 +145,10 @@
     }
 
     #navbar ul li a, #navbar ul li span {
-        font-size: 24px;
+        font-size: 18px;
         width: 100%;
         display: inline-block;
-        padding: 12px;
+        padding: 8px;
     }
 
     .current {

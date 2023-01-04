@@ -20,6 +20,23 @@
     padding: 14px 20px;
 }
 
+.iconBtnBlue {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: blue;
+    padding: 13px 20px;
+    text-decoration: none;
+    width: fit-content;
+    color: white;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.iconBtnBlue:hover {
+    background-color: #252525;
+}
+
 #container {
     max-width: 1200px;
     margin: auto;

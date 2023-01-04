@@ -34,6 +34,20 @@
         <li class="<%= path==='/venue'?'current':'' %>"><a href="/venue">Venue</a></li>
         <li class="<%= path==='/sponsorship'?'current':'' %>"><a href="/sponsorship">Sponsorship</a></li>
         <li class="<%= path==='/sessions'?'current':'' %>"><a href="/sessions">Sessions</a></li>
+
+        <li class="<%= path==='/committe'?'current':'' %>">
+            <div class="dropdown">
+                <span>Committee&nbsp;<i class="fa-solid fa-caret-down"></i></span>
+                <div class="dropdown-content">
+                    <div class="links">
+                        <a href="/steeringCommittee">Steering Committee</a>
+                        <a href="/technicalCommittee">Technical Program Committee</a>
+                        <a href="/advisoryCommittee">Advisory Committee</a>
+                        <!-- <a href="">Call For Paper</a> -->
+                    </div>
+                </div>
+            </div>
+        </li>
         <li class="<%= path==='/publications'?'current':'' %>"><a href="/publications">Publications</a></li>
     </ul>
     <div id="registerBtn">

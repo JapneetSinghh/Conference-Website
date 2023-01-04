@@ -54,5 +54,23 @@ router.get('/publications', (req, res, next) => {
         path: '/publications'
     });
 })
+router.get('/steeringCommittee', (req, res, next) => {
+    res.render('steering-committee', {
+        pageTitle: 'Steering Committee',
+        path: '/committee'
+    });
+})
+router.get('/technicalCommittee', (req, res, next) => {
+    res.render('technical-committee', {
+        pageTitle: 'Technical Program Committee',
+        path: '/committee'
+    });
+})
+router.get('/advisoryCommittee', (req, res, next) => {
+    res.render('advisory-committee', {
+        pageTitle: 'Advisory Committee',
+        path: '/committee'
+    });
+})
 
 exports.router = router;
