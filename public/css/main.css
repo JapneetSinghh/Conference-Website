@@ -100,6 +100,18 @@ h1, h2, h3, h4 {
     #showcase1 article p {
         font-size: 20px;
     }
+
+    #showcase1 article {
+        padding: 20px;
+        display: grid;
+        place-items: center;
+        min-height: 600px;
+        /* background: rgb(250, 251, 247); */
+        background: linear-gradient(rgba(26, 26, 26, 0.714), rgba(0, 0, 0, 0.559)), url('/img/showcase.jpg') center no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -306,14 +318,18 @@ h1, h2, h3, h4 {
     background: linear-gradient(rgba(26, 26, 26, 0.714), rgba(0, 0, 0, 0.559)),
         url('/img/showcase.jpg') center center/cover no-repeat;
     background-attachment: fixed;
-
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
 }
 
 #showcase-template h2 {
     font-size: 49px;
-    margin-bottom: 2px;
+    margin: 10px;
     font-family: 'Merriweather', serif;
     color: var(--primary-color);
+    text-align: center;
+
 }
 
 @media screen and (max-width:900px) {
@@ -450,12 +466,11 @@ h1, h2, h3, h4 {
 .committeeMembers {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 .committeeGrids>div, .committeeMembers>div {
     background-color: rgb(255, 255, 255);
-    min-width: 350px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 8px 0;
@@ -480,6 +495,11 @@ h1, h2, h3, h4 {
 @media screen and (max-width:900px) {
     .committeeGrids {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .committeeGrids>div, .committeeMembers>div {
+        width: 100%;
+        min-width: 0;
     }
 }
 
