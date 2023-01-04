@@ -40,15 +40,19 @@ h1, h2, h3, h4 {
     display: grid;
     place-items: center;
     min-height: 600px;
-    background: linear-gradient(rgba(255, 255, 255, 0.586), rgba(255, 255, 255, 0.939), rgba(255, 255, 255, 0.943), rgba(255, 255, 255, 0.921)), url('/img/showcase-1-article1.jpg') center center/cover no-repeat;
+    /* background: linear-gradient(rgba(255, 255, 255, 0.586), rgba(255, 255, 255, 0.939), rgba(255, 255, 255, 0.943), rgba(255, 255, 255, 0.921)), url('/img/showcase-1-article1.jpg') center center/cover no-repeat;
+     */
     /* background: rgb(250, 251, 247); */
+    background: linear-gradient(rgba(26, 26, 26, 0.714), rgba(0, 0, 0, 0.559)), url('https://img.freepik.com/free-vector/parliament-government-isometric-illustration_1284-57834.jpg?w=996&t=st=1672824847~exp=1672825447~hmac=da4d22a661a1509b3e7f8db0d8aba994dca1057d00f17b6f71025b8a56ebec0c') center center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 #showcase1 article p {
     font-size: 25px;
     max-width: 1000px;
     margin: 5px 0;
-    color: #333;
+    /* color: #333; */
+    color: white;
     font-family: 'Merriweather', serif;
 }
 
@@ -294,9 +298,10 @@ h1, h2, h3, h4 {
 #showcase-template {
     display: grid;
     place-items: center;
-    min-height: 250px;
+    min-height: 340px;
     /* background: rgb(250, 251, 247); */
-    background: linear-gradient(rgba(26, 26, 26, 0.714), rgba(0, 0, 0, 0.559)), url('/img/showcase-1-article1.jpg') center center/cover no-repeat;
+    background: linear-gradient(rgba(26, 26, 26, 0.714), rgba(0, 0, 0, 0.559)),
+        url('https://img.freepik.com/free-vector/parliament-government-isometric-illustration_1284-57834.jpg?w=996&t=st=1672824847~exp=1672825447~hmac=da4d22a661a1509b3e7f8db0d8aba994dca1057d00f17b6f71025b8a56ebec0c') center center/cover no-repeat;
     background-attachment: fixed;
 
 }
